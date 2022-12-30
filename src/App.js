@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import logo from './assest/logo.png';
+import polySense from './assest/polysense.png';
+import { TiThMenu } from 'react-icons/ti';
+import PopUp from './components/PopUp/TextPopUp';
 import './App.css';
+
+// import { useState, useEffect } from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="Nav">
+        <img src={logo} className="logo" alt="logo" />
+        <TiThMenu className="menu-icon" />
+      </div>
+
+      <section className="body">
+        <button> Message </button>
+        <button> Date </button>
+        <button> Progress </button>
+      </section>
+
+      <PopUp />
+
+      <section>
+        <img src={polySense} className="polysense" alt="polysense img" />
+      </section>
+    </>
   );
 }
 
