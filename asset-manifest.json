@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/polySense/static/css/main.d6f1f864.css",
+    "main.js": "/polySense/static/js/main.1c8137a9.js",
+    "static/js/787.136d0653.chunk.js": "/polySense/static/js/787.136d0653.chunk.js",
+    "static/media/logo.png": "/polySense/static/media/logo.9343778a59ecf138ed6c.png",
+    "static/media/polysense.png": "/polySense/static/media/polysense.89dc626c49b9ba0ca61f.png",
+    "index.html": "/polySense/index.html",
+    "main.d6f1f864.css.map": "/polySense/static/css/main.d6f1f864.css.map",
+    "main.1c8137a9.js.map": "/polySense/static/js/main.1c8137a9.js.map",
+    "787.136d0653.chunk.js.map": "/polySense/static/js/787.136d0653.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6f1f864.css",
+    "static/js/main.1c8137a9.js"
+  ]
+}
