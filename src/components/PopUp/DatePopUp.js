@@ -2,7 +2,7 @@ import './PopUp.css';
 import { useEffect, useState } from 'react';
 import { MdClear } from 'react-icons/md';
 
-function DatePopUp() {
+function DatePopUp(props) {
   const [date, setDate] = useState();
 
   useEffect(() => {
@@ -30,7 +30,14 @@ function DatePopUp() {
         <div className="popup-header">
           <h3 className="title"> The Date is: </h3>
           <MdClear
-            style={{ color: 'white', height: '2.5rem', width: '2.5rem' }}
+            style={{
+              color: 'white',
+              height: '2.5rem',
+              width: '2.5rem',
+              cursor: 'pointer',
+            }}
+            type="button"
+            onClick={props.onCancelEditing}
           />
         </div>
         <div className="popup-content">{date}</div>

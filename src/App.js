@@ -10,9 +10,29 @@ import './App.css';
 // import { useState, useEffect } from 'react';
 
 function App() {
-  const [showMessage, setShowMessage] = useState(false);
-  const [showProgress, setShowProgress] = useState(false);
-  const [showDate, setShowDate] = useState(false);
+  const [isEditingText, setIsEditingText] = useState(false);
+  const [isEditingDate, setIsEditingDate] = useState(false);
+  const [isEditingProgress, setIsEditingProgress] = useState(false);
+
+  const startEditingText = () => {
+    setIsEditingText(true);
+  };
+  const stopEditingText = () => {
+    setIsEditingText(false);
+  };
+  const startEditingDate = () => {
+    setIsEditingDate(true);
+  };
+  const stopEditingDate = () => {
+    setIsEditingDate(false);
+  };
+  const startEditingProgress = () => {
+    setIsEditingProgress(true);
+  };
+  const stopEditingProgress = () => {
+    setIsEditingProgress(false);
+  };
+
   return (
     <>
       <div className="Nav">
@@ -21,14 +41,18 @@ function App() {
       </div>
 
       <section className="body">
-        <button onClick={() => setShowMessage(!showMessage)}> Message </button>
-        {showMessage ? <TextPopUp /> : null}
+        {!isEditingText && <button onClick={startEditingText}> Message</button>}
+        {isEditingText && <TextPopUp onCancelEditing={stopEditingText} />}
 
-        <button onClick={() => setShowProgress(!showDate)}> Date </button>
-        {showDate ? <DatePopUp /> : null}
+        {!isEditingDate && <button onClick={startEditingDate}> Date </button>}
+        {isEditingDate && <DatePopUp onCancelEditing={stopEditingDate} />}
 
-        <button onClick={() => setShowDate(!showProgress)}> Progress </button>
-        {showProgress ? <ProgressPopUp /> : null}
+        {!isEditingProgress && (
+          <button onClick={startEditingProgress}> Progress </button>
+        )}
+        {isEditingProgress && (
+          <ProgressPopUp onCancelEditing={stopEditingProgress} />
+        )}
       </section>
 
       <section>
