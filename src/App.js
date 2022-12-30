@@ -1,7 +1,9 @@
 import logo from './assest/logo.png';
 import polySense from './assest/polysense.png';
 import { TiThMenu } from 'react-icons/ti';
-import PopUp from './components/PopUp/TextPopUp';
+import TextPopUp from './components/PopUp/TextPopUp';
+import DatePopUp from './components/PopUp/DatePopUp';
+import ProgressPopUp from './components/PopUp/ProgressPopUp';
 import './App.css';
 
 // import { useState, useEffect } from 'react';
@@ -20,7 +22,9 @@ function App() {
         <button> Progress </button>
       </section>
 
-      <PopUp />
+      <TextPopUp />
+      <ProgressPopUp />
+      <DatePopUp />
 
       <section>
         <img src={polySense} className="polysense" alt="polysense img" />

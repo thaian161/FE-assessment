@@ -1,0 +1,45 @@
+.popup-box_container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(114, 114, 114, 0.161);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gray;
+  color: white;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.popup-content {
+  padding: 4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: rgb(208, 207, 207);
+}
+
+.title {
+  margin: 0.5rem;
+}
+
+.progress-bar {
+  height: 4rem;
+  width: 20rem;
+  border-radius: 3rem;
+  background-color: #d4e5cb;
+  overflow: hidden;
+}
+
+.progress-bar__fill {
+  background-color: #2caf33;
+  height: 100%;
+  transition: all 0.3s ease-out;
+  border-radius: 3rem;
+}

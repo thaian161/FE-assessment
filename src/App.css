@@ -23,11 +23,11 @@
 button {
   background-color: rgb(145, 144, 144);
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   padding: 1rem;
   border-radius: 1rem;
-  width: 15rem;
+  width: 12rem;
   box-shadow: 8px 10px black;
   border: none;
 }

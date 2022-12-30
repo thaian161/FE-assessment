@@ -2,13 +2,13 @@ import './PopUp.css';
 import { useEffect, useState } from 'react';
 import { MdClear } from 'react-icons/md';
 
-function TextPopUp() {
-  const [message, setMessage] = useState();
+function ProgressPopUp() {
+  const [num, setNum] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch('http://138.197.166.169/polysense-interview/');
-      result.json().then((json) => setMessage(json.text));
+      result.json().then((json) => setNum(json.num * 100 + '%'));
     };
     fetchData();
   }, []);
@@ -17,15 +17,19 @@ function TextPopUp() {
     <section className="popup-box_container">
       <div className="popup-box">
         <div className="popup-header">
-          <h3 className="title"> Message is: </h3>
+          <h3 className="title"> Progress </h3>
           <MdClear
             style={{ color: 'white', height: '2.5rem', width: '2.5rem' }}
           />
         </div>
-        <div className="popup-content"> {message} </div>
+        <div className="popup-content">
+          <div className="progress-bar">
+            <div className="progress-bar__fill" style={{ width: num }}></div>
+          </div>
+        </div>
       </div>
     </section>
   );
 }
 
-export default TextPopUp;
+export default ProgressPopUp;
