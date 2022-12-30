@@ -10,7 +10,7 @@
   padding: 0.8rem 5rem 0.8rem 5rem;
   z-index: 999;
 
-  background-color: rgb(195, 195, 195);
+  background-color: rgb(208, 208, 208);
 }
 
 .menu-icon {
@@ -21,21 +21,22 @@
   height: 4rem;
 }
 button {
-  background-color: rgb(161, 161, 161);
-  color: white;
+  background-color: rgb(197, 197, 197);
+  color: rgb(36, 36, 36);
   font-size: 1.5rem;
   font-weight: 600;
   padding: 1rem;
   border-radius: 1rem;
   width: 12rem;
-  box-shadow: 8px 10px black;
+  box-shadow: 8px 10px gray;
   border: none;
 }
 
 button:hover {
-  background-color: rgb(118, 118, 118);
+  background-color: rgb(161, 161, 161);
   box-shadow: 5px 5px rgb(74, 74, 74);
   cursor: pointer;
+  color: white;
 }
 
 .body {
