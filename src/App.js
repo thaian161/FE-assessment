@@ -4,6 +4,7 @@ import { TiThMenu } from 'react-icons/ti';
 import TextPopUp from './components/PopUp/TextPopUp';
 import DatePopUp from './components/PopUp/DatePopUp';
 import ProgressPopUp from './components/PopUp/ProgressPopUp';
+import ToDo from './components/Todo/ToDo';
 import { useState } from 'react';
 import './App.css';
 
@@ -55,9 +56,13 @@ function App() {
         )}
       </section>
 
-      <section>
-        <img src={polySense} className="polysense" alt="polysense img" />
+      <section className="to-do">
+          <ToDo></ToDo>
       </section>
+
+      {/* <section>
+        <img src={polySense} className="polysense" alt="polysense img" />
+      </section> */}
     </>
   );
 }
