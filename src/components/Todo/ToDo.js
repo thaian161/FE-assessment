@@ -5,10 +5,10 @@ import { useState } from 'react';
 function ToDo() {
   const storageJobs = localStorage.getItem('jobs') //this is JSON format, we need to parse it so the data type returns back to array - use JSON.parse(storageJobs)
 
-  console.log(JSON.parse(storageJobs))
+  const parseJobs = JSON.parse(storageJobs)
 
   const [job, setJob] = useState("");
-  const [jobs, setJobs] = useState([]);
+  const [jobs, setJobs] = useState(parseJobs ?? []);
   console.log(job)
 
   const handleSubmit= () => {
