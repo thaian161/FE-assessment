@@ -8,7 +8,7 @@ function ToDo() {
   const parseJobs = JSON.parse(storageJobs)
 
   const [job, setJob] = useState("");
-  const [jobs, setJobs] = useState(parseJobs ?? []);
+  const [jobs, setJobs] = useState(parseJobs ?? []);// if parseJobs is null/undefined, react will use the []
   console.log(job)
 
   const handleSubmit= () => {
@@ -17,8 +17,8 @@ function ToDo() {
 
       //save to local storage - check in Application > local storage
       const jsonJobs = JSON.stringify(newJobs)
-      console.log(jsonJobs)
       localStorage.setItem("jobs", jsonJobs)
+      console.log(jsonJobs)
 
       return newJobs
     } );
