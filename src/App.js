@@ -5,6 +5,7 @@ import TextPopUp from './components/PopUp/TextPopUp';
 import DatePopUp from './components/PopUp/DatePopUp';
 import ProgressPopUp from './components/PopUp/ProgressPopUp';
 import ToDo from './components/Todo/ToDo';
+import PracticeReducer from './components/PracticeReducer/PracticeReducer';
 import { useState } from 'react';
 import './App.css';
 
@@ -56,8 +57,12 @@ function App() {
         )}
       </section>
 
-      <section className="to-do">
-          <ToDo></ToDo>
+      {/* <section className="to-do">
+        <ToDo></ToDo>
+      </section> */}
+
+      <section className="practice-reducer">
+        <PracticeReducer></PracticeReducer>
       </section>
 
       {/* <section>

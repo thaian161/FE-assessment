@@ -57,3 +57,12 @@ button:hover {
   margin-right: auto;
   width: auto;
 }
+
+.practice-reducer {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
