@@ -8,6 +8,7 @@ import ToDo from './components/Todo/ToDo';
 import PracticeReducer from './components/PracticeReducer/PracticeReducer';
 import { useState } from 'react';
 import './App.css';
+import PracticeUseRef from './components/PracticeUseRef/PracticeUseRef';
 
 // import { useState, useEffect } from 'react';
 
@@ -63,6 +64,10 @@ function App() {
 
       <section className="practice-reducer">
         <PracticeReducer></PracticeReducer>
+      </section>
+
+      <section className="practice-reducer">
+        <PracticeUseRef></PracticeUseRef>
       </section>
 
       {/* <section>
